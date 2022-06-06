@@ -1,0 +1,14 @@
+
+
+.name{
+    color: aqua;
+}
+.cv{
+    font-size: 25px;        
+}
+.cv:hover{
+    color: brown;
+}
+.cv:active{
+    color: green;
+}
