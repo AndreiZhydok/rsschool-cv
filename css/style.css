@@ -47,6 +47,9 @@ h1{
     width: 100%;
     max-width: 1000px;
 }
+.header__logo{
+    width: 100px;
+}
 .header__inner{
     display: flex;
     justify-content: space-between;
