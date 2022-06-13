@@ -1,0 +1,307 @@
+/* font-family: 'Indie Flower', cursive;
+font-family: 'Secular One', sans-serif; */
+
+*,*:before,*:after{
+    box-sizing: border-box;}
+h1,h2,h3,h4,h5,h6{margin: 0;}
+p{margin: 0;}
+
+/*------------ body ------------*/
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    color: #6c7279;
+    background-color: rgb(242, 245, 247);
+}
+h2{
+    font-family:'Secular One', sans-serif; 
+    font-weight: normal;
+    font-size: 30px;
+    color: #515369;
+}
+h1{
+    font-family:'Secular One', sans-serif; 
+    font-weight: normal;
+    font-size: 34px;
+    color: #515369;
+}
+/*------------ body ------------*/
+.container{
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    margin: 0 auto ;
+    padding: 0 15px;
+    background-color:rgb(174, 215, 248);
+    position: relative;
+}
+
+/*------------ header ------------*/
+.header{
+    width: 100%;
+    max-width: 1000px;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff;
+    align-items: center;
+}
+/*------------ header ------------*/
+
+/*------------ nav ------------*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.nav li{
+    list-style-type: none;
+    margin-left: 50px;
+}
+.nav__link{ 
+    text-decoration: none;
+    color: #515369;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.nav__link:first-child{
+    margin-left: 0;
+}
+.nav__link:hover{
+    color: #ffffff;
+}
+/*------------ nav ------------*/
+
+/*------------ page ------------*/
+.page .page__inner{
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.page .section{
+    position: relative;
+    background: rgb(174, 215, 248);
+    padding: 40px;
+}
+.page .aside{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+/*------------ page ------------*/
+
+/*------------ page-SECTION -----------------------------------------*/
+/*------------ page-SECTION-profile ------------*/
+.my-profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+.my-profile__foto{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.my-profile__foto img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/*------------ page-SECTION-profile ------------*/
+
+/*------------ Contacts ------------*/
+
+.contacts__tittle{
+    margin-bottom: 20px;
+}
+.contact__use{
+    display: flex;
+    justify-content: start;
+}
+.contact__icon{
+    height: 25px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.contact__text{
+    font-family:'Secular One', sans-serif; 
+    font-weight: normal;
+    font-size: 20px;
+    color: #515369;
+}
+.contacts__social{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-top: 10px;
+    align-items:center;
+}
+.contacts__social-icon{
+    display: block;
+    fill: #000000;
+    height: 20px;
+    width: 20px;
+}
+.contacts__social-icon:hover{
+    fill: #fff;
+}
+/*------------ Contacts ------------*/
+/*------------ Education ------------*/
+.education{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-top: 50px;
+}
+.education__tittle{
+    margin-bottom: 20px;
+}
+.year{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.univ{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-family: 'Secular One', sans-serif;
+    color:#000000;
+}
+/*------------ Education ------------*/
+
+/*------------ languages ------------*/
+.languages .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    background-color: #fff;
+}
+.languages .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #515369;
+}
+.languages ul{
+    padding-left: 0;
+}
+.languages li{
+    list-style-type: none; 
+    text-align: left;
+}
+.languages .languages__name{
+    text-transform: uppercase;
+    list-style-type: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+}
+/*------------ languages ------------*/
+/*------------ page-SECTION -----------------------------------------*/
+
+/*------------ page-aside -----------------------------------------*/
+
+/*------------ aboutme ------------*/
+.aboutme {
+    margin-bottom: 20px;
+}
+.aboutme__tittle {
+    padding-bottom: 20px;
+}
+.aboutme__text {
+    text-align: left;
+    line-height: 1.5;
+}
+.aboutme__text p{
+    text-indent: 30px;
+}
+/*------------ aboutme ------------*/
+
+/*------------ skills ------------*/
+.skills{
+    margin-top: 40px;
+}
+.skill__box {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.skill__percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.skill__percent svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #6c7279;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset:440;
+}
+.skill__percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #a4a6be;
+}
+.skill__percent svg circle:nth-child(2){
+    stroke-dashoffset: 300;
+    stroke: rgb(174, 215, 248);
+}
+.skill__name {
+    font-size: 20px;
+}
+/*------------ skills ------------*/
+
+/*------------ hobby ------------*/
+.hobby{
+    margin-top: 40px;
+}
+.hobby ul{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+.hobby ul li{
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*------------ page-aside -----------------------------------------*/
+/*------------ Footer ------------*/
+footer .contacts__social-icon{
+    display: block;
+    padding-left: 470px;
+    text-align: center;
+    justify-content: center;
+}
+footer .social__iconic{
+    display: block;
+    stroke: #fff;
+    width: 100px;
+    height: 100px;
+}
+/*------------ Footer ------------*/
